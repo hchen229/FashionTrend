@@ -1,0 +1,16 @@
+<% @blogs.each do |blog| %>
+  <div class ='blog'>
+
+      <h2><%= blog.title %></h2>
+      <%= image_tag blog.image.url(:thumb) %>
+
+      <h3>Gender: <p><%= blog.gender %></p></h3>
+      <h3>Season: <p><%= blog.season %></p></h3>
+      <h3>Description: <p><%= truncate(blog.description, :length => 25) %></p></h3>
+      <a><%= link_to "More...", blog %></a>
+
+  </div>
+
+<% end %>
+
+

@@ -1,0 +1,17 @@
+<h1><%= @blog.title %></h1>
+<%= image_tag @blog.image.url(:medium) %>
+<div>
+  <ul>
+    <li><%= @blog.description %></li>
+  <ul>
+</div>
+
+<div class="wow"></div>
+
+<div class="action">
+
+<% if @blog.user == current_user %>
+<a><%=  link_to "Edit Blog", edit_blog_path %></a>
+<a><%=  link_to "Delete Blog", blog_path, method: :delete, data: {confirm: "Are you sure?" } %></a>
+</div>
+<% end %>

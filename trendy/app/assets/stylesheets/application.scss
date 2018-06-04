@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+body {
+  text-align: center;
+  background-color: #FFFFF5
+}
+
+.wow {
+  position: fixed;
+  right: 100px;
+  bottom: 300px;
+  height: 200px;
+  width: 200px;
+  background-image: url(https://media.giphy.com/media/8087BPwFoZY0o/giphy.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.action {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-image: url(https://media.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif);
+}
+.action a {
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-family: 'VT323', monospace;
+}
+.blog {
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+  border-style: groove;
+  border-color: black;
+  width: 30%;
+
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    background-image: url(https://media.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif)
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.navbar:hover {
+    background-color: #7A7A7A;
+}
+
+.blog a {
+  color: black;
+
+}
+
+.blog a:hover {
+  color: white;
+  background-color: black;
+}
+
+p {
+  font-size: 20px;
+}
