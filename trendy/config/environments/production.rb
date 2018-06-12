@@ -26,7 +26,7 @@ Rails.application.configure do
   logger           = ActiveSupport::Logger.new(STDOUT)
   logger.formatter = config.log_formatter
   config.logger = ActiveSupport::TaggedLogging.new(logger)
-end
+  end
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :Uglifier.new(harmony: true)
